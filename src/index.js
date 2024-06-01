@@ -40,8 +40,8 @@ async function Megamart(){
     
     categories.forEach(category => {
       const optionHtml = `
-        <option value="${category}">
-          ${category}
+        <option value="${ category }">
+          ${ category }
         </option>
       `;
 
