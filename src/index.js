@@ -46,6 +46,7 @@ async function Megamart() {
       select.innerHTML += optionHtml;
     });
 
+    //resetProductClasses
     const resetProductClasses = () => {
       const visibleProducts = [...document.querySelectorAll(".pro-max, .pro-max1")]
         .filter(product => product.style.display !== "none");
