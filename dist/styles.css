@@ -18,6 +18,7 @@
 .button1:hover {
   cursor: pointer;
 }
+
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +40,23 @@
   font-size: 25px;
 }
 
+.pro-max {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 305px;
+}
+
 .pro-max1 {
   border-radius: 10px;
   display: inline-block;
@@ -53,6 +71,15 @@
   margin-left: 50px;
   position: relative;
   overflow: hidden;
+  width: 305px;
+}
+
+.pro-max .img {
+  width: 225px;
+  height: 312px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .pro-max1 .img {
@@ -296,40 +323,12 @@ select {
   bottom: 28%;
 }
 
-.pro-max {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
-  background-color: #ffffff;
-  padding: 15px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 13px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  margin-left: 50px;
-  position: relative;
-  overflow: hidden;
-  width: 305px;
-}
-
-.pro-max .img {
-  width: 225px;
-  height: 312px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1;
-  margin-bottom: 15px; /* Space between image and price */
-}
-
 .price {
-  font-size: 24px; /* Adjust size if necessary */
-  margin-bottom: 10px; /* Space between price and description */
+  font-size: 37px;
 }
 
 .desc {
-  font-size: 14px; /* Adjust size if necessary */
+  font-size: 39px;
+  display: inline-block;
   color: black;
 }
