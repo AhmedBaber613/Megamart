@@ -100,7 +100,7 @@ async function Megamart() {
 
       products.forEach(product => {
         if (selectedCategory === "all" || product.getAttribute("data-category") === selectedCategory) {
-          product.style.display = "block";
+          product.style.display = "inline-block";
         } else {
           product.style.display = "none";
         }
@@ -116,9 +116,10 @@ async function Megamart() {
       const products = document.querySelectorAll(".pro-max, .pro-max1");
 
       products.forEach(product => {
+        const category = product.getAttribute("data-category").toLowerCase();
         const title = product.querySelector("h2").innerText.toLowerCase();
-        if (title.includes(searchValue)) {
-          product.style.display = "block";
+        if (category.includes(searchValue) || title.includes(searchValue)) {
+          product.style.display = "inline-block";
         } else {
           product.style.display = "none";
         }
