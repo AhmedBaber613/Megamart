@@ -39,7 +39,7 @@ async function Megamart() {
           <img src="${ image }" class="img">
           <h2>${ title }</h2>
           <p class=".desc">
-            ${ description.substring(0, 100) }
+            ${ description.substring(0, 100) + '...' }
           </p>
           <p class="price">
             $${ price }
